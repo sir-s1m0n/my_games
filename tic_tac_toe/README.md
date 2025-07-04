@@ -23,7 +23,7 @@ A screenshot of the game window, designed using Python's turtle module:
 # How to play
 - The game board is a 3x3 grid
 - Click inside a cell to make a move
-- The game alternates between Player 1 (blue circles) and Player 2 (red crosses)
+- The game alternates between Player 1 (circles) and Player 2 (crosses)
 - Once a player wins or the board is full (draw), the game ends
 - Press the space bar to restart the game.
 

@@ -3,8 +3,10 @@ import turtle
 
 
 s = turtle.Screen()
+s.bgcolor('black')
 s.title('Tic-Tac-Toe')
 t = turtle.Turtle()
+t.pencolor('white')
 
 # Game state: centers[0] stores Player 1's occupied positions (circles),
 # centers[1] stores Player 2's occupied positions (crosses)
@@ -37,7 +39,7 @@ def draw_circle(x, y):
     disable_input()
     t.penup()
     t.goto(x, y)
-    t.pencolor('blue')
+    t.pencolor('cyan')
     t.setheading(-90)
     t.forward(75)
     t.setheading(0)
@@ -89,7 +91,7 @@ def check_win():
         for m in range(8):  # win_combos index
             win_centers = [grid_centers[win_combos[m][i]] for i in range(3)]
             if all(center in centers[n] for center in win_centers):
-                t.pencolor('green')
+                t.pencolor('lime green')
                 t.width(5)
                 if m in (0, 1, 2):
                     draw_line(win_centers[0][0] - 100, win_centers[0][1], 0)
@@ -119,7 +121,7 @@ def print_results():
         elif len(centers[0]) == len(centers[1]):
             t.write('PLAYER 2 WINS!', font = ('Arial', 25))
         if draw:
-            t.pencolor('black')
+            t.pencolor('white')
             t.write('THE GAME ENDS\nIN A DRAW', font = ('Arial', 25))
         # Reactivate the restart button after printing the results
         s.onkey(restart, 'space')
@@ -135,7 +137,7 @@ def click(x, y):
 def restart():
     '''Press the space bar to clear the screen and restart the game.'''
     t.clear()
-    t.pencolor('black')
+    t.pencolor('white')
     t.width(1)
     draw_grid()
     # Reset the game state
