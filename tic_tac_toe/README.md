@@ -14,10 +14,12 @@ project design.
 
 - `tris_design_screenshot.png`
 A screenshot of the content of the above GeoGebra file:
+
 ![Tris design](design/tris_design_screenshot.png)
 
 - `game_interface_screenshot.png`
 A screenshot of the game window, designed using Python's turtle module:
+
 ![Game interface](design/game_interface_screenshot.png)
 
 # How to play
