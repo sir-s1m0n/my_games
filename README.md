@@ -8,6 +8,6 @@ A collection of simple games written in Python.
 # Author
 These games were developed by sir-s1m0n.
 
-# Licence
-This project is licensed under the MIT Licence. See the LICENCE file for
+# License
+This project is licensed under the MIT License. See the LICENSE file for
 details.
