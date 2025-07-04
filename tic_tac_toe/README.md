@@ -5,6 +5,21 @@ A simple version of the classic Tic-Tac-Toe game written in Python.
 - Implemented using turtle module
 - 2-player mode (turn-based)
 
+# Design
+The `design` folder includes three files:
+
+- `tris_design.ggb`
+A GeoGebra file that shows the game grid structure, used as a reference for the
+project design.
+
+- `tris_design_screenshot.png`
+A screenshot of the content of the above GeoGebra file:
+![Tris design](design/tris_design_screenshot.png)
+
+- `game_interface_screenshot.png`
+A screenshot of the game window, designed using Python's turtle module:
+![Game interface](design/game_interface_screenshot.png)
+
 # How to play
 - The game board is a 3x3 grid
 - Click inside a cell to make a move
