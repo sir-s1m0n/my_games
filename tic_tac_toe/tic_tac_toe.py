@@ -92,7 +92,6 @@ def check_win():
             win_centers = [grid_centers[win_combos[m][i]] for i in range(3)]
             if all(center in centers[n] for center in win_centers):
                 t.pencolor('lime green')
-                t.width(5)
                 if m in (0, 1, 2):
                     draw_line(win_centers[0][0] - 100, win_centers[0][1], 0)
                 elif m in (3, 4, 5):
@@ -138,7 +137,6 @@ def restart():
     '''Press the space bar to clear the screen and restart the game.'''
     t.clear()
     t.pencolor('white')
-    t.width(1)
     draw_grid()
     # Reset the game state
     centers[0].clear()
